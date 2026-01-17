@@ -13,14 +13,14 @@ public class TaskForm extends JFrame {
         this.mainWindow = mainWindow;
         this.taskManager = taskManager;
         setTitle("Add Task");
-        setSize(400, 300);
+        setSize(350, 250);
         setLocationRelativeTo(null);
         setLayout(new BorderLayout());
         JPanel panel = new JPanel(new GridLayout(8, 1));
         txtId = new JTextField(String.valueOf(taskManager.generateTaskId()));
         txtId.setEditable(false);
         txtName = new JTextField();
-        txtDescription = new JTextArea(3, 20);
+        txtDescription = new JTextArea(2, 18);
         cmbStatus = new JComboBox<>(new String[]{
                 "NOT_STARTED", "ONGOING", "DONE"
         });
