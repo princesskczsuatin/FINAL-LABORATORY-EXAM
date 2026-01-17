@@ -13,7 +13,7 @@ public class MainWindow extends JFrame {
     public MainWindow(TaskManager taskManager) {
         this.taskManager = taskManager;
         setTitle("To-Do List");
-        setSize(700, 400);
+        setSize(680, 380);
         setLocationRelativeTo(null);
         setDefaultCloseOperation(EXIT_ON_CLOSE);
         JButton addButton = new JButton("Add Task");
